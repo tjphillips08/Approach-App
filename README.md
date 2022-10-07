@@ -13,28 +13,34 @@
  
  ##Wireframes:
  
- 
- ![Home Page](https://www.figma.com/file/hwjT8HcHMigrPHf7VACM3I/Untitled?node-id=0%3A1)
+ ##Home Page
+![Screen Shot 2022-10-07 at 8 40 39 AM](https://user-images.githubusercontent.com/109078858/194567953-d485c0cb-add4-476e-82ef-e62c65650d27.png)
+
+
  
  This is how the homepage will look when you visit our website. You will see our nav bar, where you can navigate to the courses, clubs and sign up or login to your account. Also, you will notice the tour schedules for both the PGA and LPGA tours, so you can keep up with the next tournament. Who knows there might be one in your area.
  
- 
- ![Courses](https://www.figma.com/file/hwjT8HcHMigrPHf7VACM3I/Untitled?node-id=1%3A7)
+ ##Courses
+![Screen Shot 2022-10-07 at 8 40 55 AM](https://user-images.githubusercontent.com/109078858/194568034-1009caf2-268a-4c29-8684-442fe1666e43.png)
+
  
  When you navigate to our courses page, here is what you'll see. You will see all the courses listed below and can search by city, state, zipcode or name to find the courses in your area. 
  
- 
- ![Course Details](https://www.figma.com/file/hwjT8HcHMigrPHf7VACM3I/Untitled?node-id=1%3A19)
+ ##Course Details
+![Screen Shot 2022-10-07 at 8 41 17 AM](https://user-images.githubusercontent.com/109078858/194568118-ba8b5781-828d-4e67-8dbc-9b3df2a2cad9.png)
+
  
  When you find that course you want more information about, just click on the picture of the course. This will pull up a detail page with the course name, address and a link to the course website. Feel free to look at their website for pricing and more detailed information about the course. 
  
- 
- ![Clubs](https://www.figma.com/file/hwjT8HcHMigrPHf7VACM3I/Untitled?node-id=1%3A30)
+ ##Clubs
+ ![Screen Shot 2022-10-07 at 8 41 28 AM](https://user-images.githubusercontent.com/109078858/194568194-9a52c505-cb83-4e4a-bad9-8ebe18fe48fb.png)
+
  
  When you navigate to the clubs, you will be brought to this page of all clubs. Here you will see a full list of all the user created clubs. You will be able to see which course the club is tied too, so you can join a club that matches your interest. You also can create your own club!
  
- 
- ![Club Details](https://www.figma.com/file/hwjT8HcHMigrPHf7VACM3I/Untitled?node-id=1%3A40)
+ ##Course Details
+ ![Screen Shot 2022-10-07 at 8 41 41 AM](https://user-images.githubusercontent.com/109078858/194568264-3e44008a-84d4-4f98-a39b-b67a42bff9dd.png)
+
  
  When you click onto the club, you will be brought to this page. This will show you all the members in the club and their contact information. This way you can see if this is a club you want to join . Don't forget to sign up as a member of your selected course. 
  
