@@ -1,3 +1,3 @@
 # Approach
 
-https://i.imgur.com/HYfU6bpm.png
+![Logo](https://i.imgur.com/HYfU6bpm.png)
