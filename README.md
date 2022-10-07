@@ -45,4 +45,31 @@
  When you click onto the club, you will be brought to this page. This will show you all the members in the club and their contact information. This way you can see if this is a club you want to join . Don't forget to sign up as a member of your selected course. 
  
  
+ ## ERD
+ ![Screen Shot 2022-10-07 at 8 48 14 AM](https://user-images.githubusercontent.com/109078858/194568964-c2c1162f-428e-4d97-8678-8f5ed6ef76a5.png)
+ 
+ For this application I am using three Data Models. As you can see from the ERD our three models consist of Course, Member and Club. There is a 1:M relationship between courses and their members, while there is a M-M relationship between the members and the clubs they are choosing.
+ 
+ ## Technologies Used
+ ![django-python-logo](https://user-images.githubusercontent.com/109078858/194570662-fb591432-26bc-45aa-ad59-f97415eb08f3.png)
+ ![PostgreSQL-Logo](https://user-images.githubusercontent.com/109078858/194571618-6469808c-6b01-4ec3-b2ca-a3ed0e3699ed.png)
+
+
+This application was built using a python/django full-stack. I used Python to implement all the functionality of the application, such as looping through content for display. Django was used heavily in this application to create my authorization for the application. Databases were created with PSQL to help build more dynamic relational database implementation. 
+
+
+## Challenging Code
+Updated at later date
+
+
+## API
+https://developer.sportradar.com/docs/read/golf/Golf_v2#tournament-schedule
+Sport Radar was used in this application to display tour schedules for both the PGA and LPGA tours on the homepage. There is a lot of functionality with this API that can be further implemented. 
+
+## Stretch Goals
+Updated at later date
+
+
+ 
+ 
  
