@@ -3,6 +3,7 @@ from django.views import View
 from django.http import HttpResponse
 from django.views.generic.base import TemplateView
 from .models import Course
+from django.views.generic.edit import CreateView
 
 # Create your views here.
 
@@ -27,4 +28,11 @@ class CourseList(TemplateView):
             context["courses"] = Course.objects.all()
             context["stuff_at_top"] = "All Courses"
             return context
+
+
+class CourseCreate(CreateView):
+    model = Course
+    fields = ['name', 'img', 'address', 'website']
+    template_name = "course_create.html"
+    success_url = "/courses/"
         
