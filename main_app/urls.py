@@ -10,4 +10,8 @@ urlpatterns = [
     path('courses/<int:pk>/', views.CourseDetail.as_view(), name="course_detail"),
     path('courses/<int:pk>/update', views.CourseUpdate.as_view(), name="course_update"),
     path('courses/<int:pk>/delete', views.CourseDelete.as_view(), name="course_delete"),
+    path('courses/<int:pk>/members/new', views.MemberCreate.as_view(), name="member_create"),
+    path('clubs/', views.ClubList.as_view(), name="club_list"),
+    path('clubs/<int:pk>/members/<int:member_pk>/', views.ClubMemberAssoc.as_view(), name="club_member_assoc"),
+    
 ]

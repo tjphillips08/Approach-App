@@ -24,3 +24,13 @@ class Member(models.Model):
 
     def __str__(self):
         return self.name
+
+
+
+class Club(models.Model):
+    name = models.CharField(max_length = 100)
+    img = models.CharField(max_length = 250)
+    members = models.ManyToManyField(Member)
+
+    def __str__(self):
+        return self.name
