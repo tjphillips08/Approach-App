@@ -46,6 +46,11 @@ class CourseDetail(DetailView):
     model = Course
     template_name = "course_detail.html"
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["clubs"] = Club.objects.all()
+        return context
+
 
 class CourseUpdate(UpdateView):
     model = Course

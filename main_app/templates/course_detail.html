@@ -29,6 +29,35 @@
                 <span>{{member.handicap}}</span>
                 <span>{{member.email}}</span>
             </div>
+            <div class="dropdown">
+                <div class="dropdown-trigger">
+                  <button
+                    class="button"
+                    aria-haspopup="true"
+                    aria-controls="dropdown-menu"
+                  >
+                    <span>Join Club</span>
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                  <div class="dropdown-content">
+                    {% for club in clubs %}
+                <!-- each playlist becomes a drop
+                down item with the ids needed to add to the join table  -->
+                    <a
+                      href="{% url 'club_member_assoc' club.pk member.pk %}?assoc=add"
+                      class="dropdown-item"
+                    >
+                      {{club.name}}
+                    </a>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </span>
         {% empty %}
             <article class="message">
                 <div class="message-header">
