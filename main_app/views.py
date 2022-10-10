@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from django.views.generic.base import TemplateView
 from .models import Course
 from django.views.generic.edit import CreateView
+from django.views.generic import DetailView
 
 # Create your views here.
 
@@ -35,4 +36,9 @@ class CourseCreate(CreateView):
     fields = ['name', 'img', 'address', 'website']
     template_name = "course_create.html"
     success_url = "/courses/"
+
+
+class CourseDetail(DetailView):
+    model = Course
+    template_name = "course_detail.html"
         
