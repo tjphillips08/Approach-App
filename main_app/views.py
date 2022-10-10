@@ -19,5 +19,12 @@ class CourseList(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context ["courses"] = Course.objects.all()
-        return context
+        mySearchName = self.request.GET.get("name")
+        if mySearchName != None:
+            context["courses"] = Course.objects.filter(name__icontains=mySearchName)
+            context["stuff_at_top"] = f"Searching for {mySearchName}"
+        else:
+            context["courses"] = Course.objects.all()
+            context["stuff_at_top"] = "All Courses"
+            return context
+        

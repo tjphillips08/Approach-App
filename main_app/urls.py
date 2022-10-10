@@ -6,5 +6,5 @@ urlpatterns = [
     path('', views.Home.as_view(), name="home"),
     path('about/', views.About.as_view(), name="about"),
     path('courses/', views.CourseList.as_view(), name="course_list"),
-
+    path('courses/new/', views.CourseCreate.as_view(), name="course_create"),
 ]
