@@ -14,3 +14,13 @@ class Course(models.Model):
 
     class Meta:
         ordering = ['name']
+
+
+class Member(models.Model):
+    name = models.CharField(max_length = 100)
+    handicap = models.IntegerField(default=0)
+    email = models.CharField(max_length = 100)
+    course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name="members")
+
+    def __str__(self):
+        return self.name
