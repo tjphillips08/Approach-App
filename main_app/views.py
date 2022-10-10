@@ -3,8 +3,9 @@ from django.views import View
 from django.http import HttpResponse
 from django.views.generic.base import TemplateView
 from .models import Course
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView
 from django.views.generic import DetailView
+from django.urls import reverse
 
 # Create your views here.
 
@@ -35,10 +36,20 @@ class CourseCreate(CreateView):
     model = Course
     fields = ['name', 'img', 'address', 'website']
     template_name = "course_create.html"
-    success_url = "/courses/"
+    def get_success_url(self):
+        return reverse('course_detail', kwargs={'pk': self.object.pk})
 
 
 class CourseDetail(DetailView):
     model = Course
     template_name = "course_detail.html"
+
+
+class CourseUpdate(UpdateView):
+    model = Course
+    fields = ['name', 'img', 'address', 'website']
+    template_name = "course_update.html"
+    def get_success_url(self):
+        return reverse('course_detail', kwargs={'pk': self.object.pk})
+    
         
