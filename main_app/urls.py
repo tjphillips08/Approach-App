@@ -3,7 +3,6 @@ from . import views
 
 # this like app.use() in express
 urlpatterns = [
-    path('', views.Home.as_view(), name="home"),
     path('about/', views.About.as_view(), name="about"),
     path('courses/', views.CourseList.as_view(), name="course_list"),
     path('courses/new/', views.CourseCreate.as_view(), name="course_create"),
@@ -15,5 +14,10 @@ urlpatterns = [
     path('clubs/<int:pk>/members/<int:member_pk>/', views.ClubMemberAssoc.as_view(), name="club_member_assoc"),
     path('clubs/<int:pk>/', views.ClubDetail.as_view(), name="club_detail"),
     path('clubs/new/', views.ClubCreate.as_view(), name="club_create"),
+    path('', views.PostList.as_view(), name="home"),
+    path('<slug:slug>/', views.post_detail, name='post_detail'),
+    
+    
+    
     
 ]
