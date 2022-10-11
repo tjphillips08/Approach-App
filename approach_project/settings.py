@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'bootstrap4',
     
 ]
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -128,7 +129,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'main_app/static')]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 
 
 

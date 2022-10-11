@@ -151,6 +151,16 @@ def post_detail(request, slug):
 
 
 
+
+class PostCreate(CreateView):
+    model = Post
+    fields = ['title', 'slug', 'author', 'content']
+    template_name = "post_create.html"
+    def get_success_url(self):
+        return reverse('post_detail', kwargs={'pk': self.object.pk})
+
+
+
         
 
 
