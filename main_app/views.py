@@ -100,6 +100,35 @@ class ClubMemberAssoc(View):
 
 
 
+class ClubDetail(DetailView):
+    model = Club
+    template_name = "club_detail.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["clubs"] = Club.objects.all()
+        return context
+
+
+
+class ClubCreate(CreateView):
+    model = Club
+    fields = ['name', 'img', 'members']
+    template_name = "club_create.html"
+    def get_success_url(self):
+        return reverse('club_detail', kwargs={'pk': self.object.pk})
+
+
+
+
+        
+
+
+
+
+
+
+
 
 
 
