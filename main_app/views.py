@@ -132,7 +132,7 @@ class ClubCreate(CreateView):
 class PostList(generic.ListView):
     queryset = Post.objects.order_by('-created_on')
     template_name = "post_list.html"
-    paginate_by = 3
+    paginate_by = 5
 
 
 
@@ -156,14 +156,6 @@ def post_detail(request, slug):
 
 
 
-class PostCreate(CreateView):
-    model = Post
-    fields = ['title', 'author', 'content']
-    template_name = "post_create.html"
-    def get_success_url(self):
-        return reverse('post_detail', kwargs={'slug': str(self.slug)})
-
-
 
 class Signup(View):
     
@@ -181,6 +173,9 @@ class Signup(View):
         else:
             context = {"form": form}
             return render(request, "registration/signup.html", context)
+
+
+
 
 
   

@@ -9,6 +9,8 @@ h1,
 h2,
 h3 {
     color: #ffffff;
+    font-family: 'Hepta Slab', serif;;
+    justify-content: center;
 }
 
 .title {

@@ -33,7 +33,7 @@
             <div class="navbar-menu navbar-end">
                 {% if user.is_authenticated %}
                 <div class="navbar-menu navbar-end">
-                <a class="navbar-item" href="/">Posts</a>
+                <a class="navbar-item" href="/">Forums</a>
                 <a class="navbar-item" href="/clubs">Clubs</a>
                 <span class="navbar-item">Hello: {{user.username}}</span>
                 <a class="navbar-item" href="{% url 'logout' %}">Logout</a>

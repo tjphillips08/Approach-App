@@ -4,16 +4,16 @@
 {% endblock %}
 {% block content %}
 
+<h2>Welcome to the Forum: Go Mingle and Find other Golfers</h2>  
 
 <div class="container">
     <div class="row">
 
-        <a class="button is-dark" href="{% url 'post_create' %}">Add Post</a>
         <div class="col-md-8 mt-3 left">
             {% for post in post_list %}
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h2 class="card-title">{{ post.title }}</h2>
+                        <h2 class="card-header-title">{{ post.title }}</h2>
                         <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}}  </p>
 
                         <p class="card-text">{{post.content|safe|slice:":200" }}</p>
@@ -31,10 +31,11 @@
     <nav aria-label="Page navigation conatiner"></nav>
     <ul class="pagination justify-content-center">
         {% if page_obj.has_previous %}
-            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link"><button class="button is-success is-light">Previous</button></a></li>
         {% endif %}
         {% if page_obj.has_next %}
-            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+             <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"><button class="button is-success is-light">Next</button></a></li>
+            <!-- <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li> -->
 
         {% endif %}
     </ul>
