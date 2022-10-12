@@ -11,6 +11,8 @@ from django.views import generic
 from .forms import CommentForm
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 
 
@@ -126,7 +128,7 @@ class ClubCreate(CreateView):
 
 
 
-
+@method_decorator(login_required, name='dispatch')
 class PostList(generic.ListView):
     queryset = Post.objects.order_by('-created_on')
     template_name = "post_list.html"

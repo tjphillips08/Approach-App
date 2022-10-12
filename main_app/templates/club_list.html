@@ -6,8 +6,10 @@
 
 
 
-
+{% if user.is_superuser %}
 <a class="button is-dark" href="{% url 'club_create' %}">New Club</a>
+{% else %}
+{% endif %}
 <div class="gallery">
 {% for club in clubs %}
 <a href="{% url 'club_detail' club.pk %}">
