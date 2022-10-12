@@ -23,7 +23,9 @@
         {% endif %}
         <!-- inside container -->
     <div class="detail__members mb-5">
+        <div class="text-is-centered">
         <h3 class="title is-3">Members</h3>
+        </div>
 
         <form class="mb-5" action="{% url 'member_create' course.pk %}" method="post">
             {% csrf_token %}
@@ -113,7 +115,7 @@
     <div class="detail__about">
         <h4 class="title is-4">Details</h4>
         <p>{{course.address}}</p>
-        <a> {{course.website}}</a>
+        <a href="{{course.website}}">Visit Their Website</a>
     </div>
 </div>
 
