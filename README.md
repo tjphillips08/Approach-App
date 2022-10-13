@@ -13,13 +13,6 @@
  
  ## Wireframes:
  
- ## Home Page
-![Screen Shot 2022-10-07 at 8 40 39 AM](https://user-images.githubusercontent.com/109078858/194567953-d485c0cb-add4-476e-82ef-e62c65650d27.png)
-
-
- 
- This is how the homepage will look when you visit our website. You will see our nav bar, where you can navigate to the courses, clubs and sign up or login to your account. Also, you will notice the tour schedules for both the PGA and LPGA tours, so you can keep up with the next tournament. Who knows there might be one in your area.
- 
  ## Courses
 ![Screen Shot 2022-10-07 at 8 40 55 AM](https://user-images.githubusercontent.com/109078858/194568034-1009caf2-268a-4c29-8684-442fe1666e43.png)
 
@@ -42,9 +35,30 @@
  ![Screen Shot 2022-10-07 at 8 41 41 AM](https://user-images.githubusercontent.com/109078858/194568264-3e44008a-84d4-4f98-a39b-b67a42bff9dd.png)
 
  
- When you click onto the club, you will be brought to this page. This will show you all the members in the club and their contact information. This way you can see if this is a club you want to join . Don't forget to sign up as a member of your selected course. 
+ When you click onto the club, you will be brought to this page. This will show you all the members in the club and their contact information. This way you can see if this is a club you want to join . Don't forget to sign up as a member of your selected course.
  
  
+ ## Final Product Preview
+ ![Screen Shot 2022-10-13 at 9 42 28 AM](https://user-images.githubusercontent.com/109078858/195634911-99ca4182-3184-471e-ac5e-065f25131c7c.png)
+ 
+ Initially as a stretch goal I wanted to implement posts/comments as a forum part of this application. This is a look at the forum. The admin sets up different posts that all users can comment on. The purpose of this is so user can communicate with each other and find other golfers to go play a round with or just talk about their experience at a certain course. 
+ 
+ 
+ ![Screen Shot 2022-10-13 at 9 42 59 AM](https://user-images.githubusercontent.com/109078858/195635368-0204a118-a24c-45f2-ba8c-54e76fddd514.png)
+ 
+ Final product for our courses page.
+ 
+ 
+ ![Screen Shot 2022-10-13 at 9 43 12 AM](https://user-images.githubusercontent.com/109078858/195635467-e28a12fa-46bb-4f5f-8e87-d591a1ebc907.png)
+ 
+ Final product for our club page where members can join specific clubs or create their own. 
+ 
+ 
+ ![Screen Shot 2022-10-13 at 9 43 49 AM](https://user-images.githubusercontent.com/109078858/195635654-d1ff7b28-59bd-4abd-9b81-dce46877031d.png)
+ 
+ Final product for our course detail page. Here is where you can see other members that belong to the course and can become a member as well.
+
+
  ## ERD
  ![Screen Shot 2022-10-07 at 8 48 14 AM](https://user-images.githubusercontent.com/109078858/194568964-c2c1162f-428e-4d97-8678-8f5ed6ef76a5.png)
  
