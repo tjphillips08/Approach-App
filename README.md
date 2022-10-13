@@ -69,7 +69,7 @@
  ![PostgreSQL-Logo](https://user-images.githubusercontent.com/109078858/194571618-6469808c-6b01-4ec3-b2ca-a3ed0e3699ed.png)
 
 
-This application was built using a python/django full-stack. I used Python to implement all the functionality of the application, such as looping through content for display. Django was used heavily in this application to create my authorization for the application. Databases were created with PSQL to help build more dynamic relational database implementation. I used Summernote to change Admin forms that would help filter comments and posts for easy moderation. Also, utilized crispy forms to change and adapt my comment form for users. 
+This application was built using a python/django full-stack. I used Python to implement all the functionality of the application, such as looping through content for display. Django was used heavily in this application to create my authorization for the application. Databases were created with PSQL to help build more dynamic relational database implementation. I used Summernote to change Admin forms that would help filter comments and posts for easy moderation. Also, utilized crispy forms to change and adapt my comment form for users and Bulma for the overall styling. 
 
 
 ## Challenging Code
