@@ -55,11 +55,15 @@
  ![PostgreSQL-Logo](https://user-images.githubusercontent.com/109078858/194571618-6469808c-6b01-4ec3-b2ca-a3ed0e3699ed.png)
 
 
-This application was built using a python/django full-stack. I used Python to implement all the functionality of the application, such as looping through content for display. Django was used heavily in this application to create my authorization for the application. Databases were created with PSQL to help build more dynamic relational database implementation. 
+This application was built using a python/django full-stack. I used Python to implement all the functionality of the application, such as looping through content for display. Django was used heavily in this application to create my authorization for the application. Databases were created with PSQL to help build more dynamic relational database implementation. I used Summernote to change Admin forms that would help filter comments and posts for easy moderation. Also, utilized crispy forms to change and adapt my comment form for users. 
 
 
 ## Challenging Code
-Updated at later date
+
+![Screen Shot 2022-10-13 at 9 57 06 AM](https://user-images.githubusercontent.com/109078858/195632507-83f18645-808d-4612-af46-c99bba9c8933.png)
+
+This code was made in my Admin.py file. This is what I created to give my admin forms more functionality. I wanted to be able to moderate the comments that went through my site and creating a action field on my admin comments form, allowed me to moderate these comments. Also, I incorporated slugs into my post admin form to allow a dynamic url to each post based on the title of the post. Finally, I set up filters on these forms, so I would be able to easily navigate the comments by day, created-on and most recent to streamline the moderation portion of my website.
+
 
 
 ## API
