@@ -87,7 +87,7 @@ Github Repo: https://github.com/tjphillips08/Approach-App
 Heroku: 
 
 ## Stretch Goals
-Updated at later date
+This was a passion project of mine from the first day I started at GA. I am very pleased with the functionality and appearance I was able to accomplish in a week. However, we all know that these projects can always use new features and better styling. First, I want to tie in my posts and comments where users can upload images and captions(like a social media site). The main focus of this application is the user interaction and having a place where users can post their achievements and hear back from peers would be a great feature. Also, I want to add a thread for club members to connect faster and in real time. This will be a place for those members to set up tee times and find others to play with. Us golfers all know that it is more fun to play in a group, so these two features will be the next steps in this application.
 
 
  
