@@ -66,9 +66,10 @@ This code was made in my Admin.py file. This is what I created to give my admin 
 
 
 
-## API
-https://developer.sportradar.com/docs/read/golf/Golf_v2#tournament-schedule
-Sport Radar was used in this application to display tour schedules for both the PGA and LPGA tours on the homepage. There is a lot of functionality with this API that can be further implemented. 
+## Links
+
+Github Repo: 
+Heroku: 
 
 ## Stretch Goals
 Updated at later date
