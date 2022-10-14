@@ -10,6 +10,9 @@ psycopg2 = "*"
 django-heroku = "*"
 gunicorn = "*"
 whitenoise = "*"
+django-crispy-forms = "*"
+django-summernote = "*"
+bootstrap4 = "*"
 
 [dev-packages]
 
