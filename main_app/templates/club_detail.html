@@ -19,11 +19,14 @@
                     <span>Contact: {{member.email}}</span>
                     
                     <span>
+                        {% if user.is_superuser %}
                         <a href="{% url 'club_member_assoc' club.pk member.pk %}?assoc=remove" class="button is-danger is-outlined">    
                         <span class="icon is-small">
                             <i class="fas fa-times"></i>
                         </span>
                         </a>
+                        {% else %}
+                        {% endif %}
                     </span>
                 </div>
                 {% empty %} 
